@@ -1,9 +1,12 @@
 # Description
 
-Implementing a dynamic Python invoker REST service. The service has the following features:
+Implementing a dynamic Python invoker REST service to updload a python script on server with rocksdb and execute it later.
 
 # Requirement
 Docker image with flask and rocksdb dependency: Use the docker file for the image
+
+
+The service has the following features:
 
 ## 1. Python Script Uploader
 
