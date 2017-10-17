@@ -1,8 +1,9 @@
-# Requirements
+# Description
 
-You will be implementing a dynamic Python invoker REST service. The service will have the following features:
-docker build -t ubuntu-python3.6-rocksdb-grpc-flask:1.0 .
+Implementing a dynamic Python invoker REST service. The service has the following features:
 
+# Requirement
+Docker image with flask and rocksdb dependency: Use the docker file for the image
 
 ## 1. Python Script Uploader
 
@@ -20,7 +21,7 @@ print("Hello World")
 ```
 
 ```bash
-curl -i -X POST -H "Content-Type: multipart/form-data" -F "file=@/home/arsh/Downloads/assignment1/file/foo.py" "http://127.0.0.1:5000/api/v1/scripts"
+curl -i -X POST -H "Content-Type: multipart/form-data" -F "file=@Path to local file" "http://127.0.0.1:5000/api/v1/scripts"
 ```
 
 ```bash
@@ -37,7 +38,6 @@ curl -i -X POST -H "Content-Type: multipart/form-data" -F "file=@/home/arsh/Down
 
 ```bash
 GET http://localhost:8000/api/v1/scripts/{script-id}
-GET http://127.0.0.1:5000/api/v1/scripts/123450
 ```
 
 ### Request
