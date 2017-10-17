@@ -1,0 +1,26 @@
+$ curl -i -X POST -H "Content-Type: multipart/form-data" -F "file=@/home/arsh/Downloads/assignment1/file/foo.py" "http://127.0.0.1:5000/api/v1/scripts"
+HTTP/1.1 100 Continue
+
+HTTP/1.0 201 CREATED
+Content-Type: application/json
+Content-Length: 27
+Server: Werkzeug/0.12.2 Python/3.6.3
+Date: Tue, 17 Oct 2017 07:15:22 GMT
+
+{
+  "scriptid": "123458"
+}
+
+$ curl -i http://127.0.0.1:5000/api/v1/scripts/123458
+HTTP/1.0 200 OK
+Content-Type: application/json
+Content-Length: 14
+Server: Werkzeug/0.12.2 Python/3.6.3
+Date: Tue, 17 Oct 2017 07:15:32 GMT
+
+"Hello World"
+
+
+
+
+
